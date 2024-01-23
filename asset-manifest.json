@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DragonBallWiki/static/css/main.75403f10.css",
+    "main.js": "/DragonBallWiki/static/js/main.6c45d2a4.js",
+    "static/js/787.50597f0d.chunk.js": "/DragonBallWiki/static/js/787.50597f0d.chunk.js",
+    "index.html": "/DragonBallWiki/index.html",
+    "main.75403f10.css.map": "/DragonBallWiki/static/css/main.75403f10.css.map",
+    "main.6c45d2a4.js.map": "/DragonBallWiki/static/js/main.6c45d2a4.js.map",
+    "787.50597f0d.chunk.js.map": "/DragonBallWiki/static/js/787.50597f0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75403f10.css",
+    "static/js/main.6c45d2a4.js"
+  ]
+}
