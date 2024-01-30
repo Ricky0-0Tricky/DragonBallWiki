@@ -1,0 +1,130 @@
+/* Form de Registo */
+.registration-form {
+    display: grid;
+    gap: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botão */
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Efeito de Hover sobre o Botão */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Container do Input do Email */
+.email-input-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Span com "@ipt.pt" do Input do Email */
+.email-estático {
+    margin-right: 5px;
+    margin-bottom: 22px;
+}
+
+.login-link {
+    font-style: bold;
+    font-size: 15px
+}
+
+/* Caixas de Sucesso e Falhanço */
+.success-box,
+.failure-box {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Caixa de Sucesso */
+.success-box {
+    background-color: #4caf50;
+    color: white;
+    top: -40px;
+}
+
+/* Caixa de Falhanço */
+.failure-box {
+    background-color: #f44336;
+    color: white;
+    top: -40px;
+}
+
+/* Media queries para design responsivo */
+
+/* Galaxy Fold */
+@media only screen and (min-width: 0px) and (max-width: 280px) {
+    .login-link {
+        font-size: 12px;
+    }
+}
+
+/* Telemóveis Genéricos */
+@media only screen and (min-width: 281px) and (max-width: 480px) {
+    .registration-form {
+        grid-template-columns: 1fr;
+    }
+
+    .success-box,
+    .failure-box {
+        width: 90%;
+        top: -20px;
+    }
+}
+
+/* Tablets de tela pequena */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .registration-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .success-box,
+    .failure-box {
+        width: 70%;
+        top: -20px;
+    }
+}
+
+/* Tablets de tela grande */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .registration-form {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .success-box,
+    .failure-box {
+        width: 60%;
+        top: -20px;
+    }
+}

@@ -1,0 +1,125 @@
+/* Container para todo o componente */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa de Login */
+.login-box {
+    width: 400px;
+    padding: 4vw;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Headers 2 da Caixa de Login */
+.login-box h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Form da Caixa de Login */
+.login-box form {
+    display: flex;
+    margin-top: 2vw;
+    gap: 10px;
+    flex-direction: column;
+}
+
+/* Labels do Form da Caixa de Login */
+.login-box form label {
+    margin-bottom: 8px;
+}
+
+/* Inputs do Form da Caixa de Login */
+.login-box form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botão do Form da Caixa de Login */
+.login-box form button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efeito de Hover do Botão do Form da Caixa de Login */
+.login-box form button:hover {
+    background-color: #45a049;
+}
+
+/* Container do Input do Email */
+.email-input-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Span com "@ipt.pt" do Input do Email */
+.email-estático {
+    margin-right: 5px;
+    margin-bottom: 22px;
+}
+
+.register-link {
+    font-style: bold;
+    font-size: 15px;
+}
+
+/* Media queries para design responsivo */
+
+/* Galaxy Fold */
+@media only screen and (min-width: 0px) and (max-width: 280px) {
+    .register-link {
+        font-size: 12px;
+    }
+}
+
+/* Telemóveis Genéricos */
+@media only screen and (min-width: 281px) and (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 4vw;
+    }
+
+    .login-box form button {
+        font-size: 14px;
+    }
+}
+
+/* Tablets de tela pequena */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .login-box {
+        width: 70%;
+        padding: 3vw;
+    }
+
+    .login-box form button {
+        font-size: 15px;
+    }
+}
+
+/* Tablets de tela grande */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .login-box {
+        width: 60%;
+        padding: 2vw;
+    }
+
+    .login-box form button {
+        font-size: 16px;
+    }
+}

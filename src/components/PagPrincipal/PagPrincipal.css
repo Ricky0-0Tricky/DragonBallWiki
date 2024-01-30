@@ -1,0 +1,95 @@
+/* Container para todo o componente */
+.container-principal {
+  justify-content: center;
+  top: 0px;
+}
+
+/* Barra de Topo */
+.top-bar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Linha de Filtros */
+.filter {
+  display: flex; 
+  align-items: center;
+}
+
+/* Filtro da pesquisa */
+.filter-input {
+  margin-right: 10px;
+}
+
+/* Botão de Logout */
+.logout-button {
+  width: 70.19px;
+  height: 34px;
+  padding: 5px 10px;
+}
+
+/* Container da Personagem */
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 20px;
+}
+
+/* Caixa da Personagem */
+.character-box {
+  width: 10%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Imagem da Personagem */
+.character-image {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Tooltip da Personagem */
+.character-tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  text-align: left;
+  width: 200px;
+}
+
+/* Tooltip da Personagem caso o seu ID seja >= 40 */
+.character-tooltip.acima-40 {
+  top: 65%;
+}
+
+/* Media query para design responsivo */
+@media only screen and (max-width: 600px) {
+  .filter-input::placeholder {
+    font-size: 8px;
+  }
+
+  .logout-button {
+    font-size: 8px;
+  }
+  
+  .character-box {
+    width: 20%;
+  }
+
+  .character-tooltip.acima-40{
+    top: 115%;
+  }
+  
+  p {
+    font-size: 8px;
+  }
+}
